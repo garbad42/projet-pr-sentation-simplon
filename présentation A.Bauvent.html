@@ -6,15 +6,21 @@
   <title>motivations pour le metier de developpeur web</title>
 </head>
 <style>
-    body {
-    background-color: rgb(237, 209, 99);
+  body{
+    background-color: antiquewhite;
+    width: 600px;
+  }
+  
+  #en-tête{
+    text-align: center;
+    width:500px;
+    margin:auto;
+    border-width: thick;
+    border-style: double;
+    border-color: crimson;
+    background-color: aliceblue;
   }
 
-  h1 {
-    text-align: center;
-    background-color: rgb(235, 127, 235);
-    color: rgb(26, 36, 235);
-  }
 
   h2 {
     color: rgb(231, 20, 80);
@@ -57,11 +63,51 @@
   .lien-retour{
     font-size:0.7em;
   }
+  #presentation{
+    position: relative;
+    left: 20px;
+    width: 600px;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(224, 211, 187)
+ }
+ #recherche{
+    position: relative;
+    left: 100px;
+    width: 600px;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(218, 250, 245)
+ }
+ #pourquoi-codage{
+    position: relative;
+    left: 180px;
+    width: 600px;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(176, 226, 96)
+ }
+ #avant-tout{
+  position: relative;
+  left:60px;
+  width: 600px;
+  height: auto;
+  padding: 5px 15px 5px 15px;
+  background-color: cadetblue;
+ }
+ #mieux-connaitre{
+  position: relative;
+  left:60px;
+  width: 600px;
+  height: auto;
+  padding: 5px 15px 5px 15px;
+  background-color: rgb(221, 195, 214);
+ }
 </style>
 
 <body>
   
-  <h1>POURQUOI VOULOIR DEVENIR DEVELOPEUR WEB?</h1>
+  <h1 id="en-tête">POURQUOI VOULOIR DEVENIR DEVELOPEUR WEB?</h1>
   <h4 id="sommaire">Sommaire:</h4>
   <ol>
     <li><a href="#presentation">présentation</a></li>
@@ -69,18 +115,24 @@
     <li><a href="#pourquoi-codage">pourquoi le codage web</a></li>
     <li><a href="#mieux-connaitre">pour un peu mieux me connaitre</a></li>
   </ol>
-  <h2 id="presentation">PRESENTATION</h2>
+
+  <div id="presentation">
+  <h2>PRESENTATION</h2>
 
   <p>Alain Bauvent, j'ai 59 ans, je vis en couple à Saint Etienne. Mon parcours professionnel est divisé en 2 étapes principales:</p>
-	<dl>
+  
+	
+  <dl>
 		<dt class="titre">- la première au sein des armées</dt>
 			<dd>après une première partie de carrière en unité de combat</dd>
 			<dd>concours et formation d'officier</dd>
 			<dd>recrutement et sélection des candidats à l'engagement</dd>
-    <br>
+   
+    
 		<dt class="titre">- la deuxième dans le traitement de valeurs</dt>
 			<dd>évolution vers un poste de technicien de maintenance</dd>
 	</dl>
+ 
 	<p>Ces 2 milieux professionnels m'ont apporté quelques traits et compétences tels que</p>
 	<ul>
 		<li>rigueur,persévérance,goût de l'effort </li>
@@ -88,13 +140,16 @@
 		<li>esprit d'initiative, sens de l'adaptation, de l'innovation</li>
 		<li>goût pour l'emploi des outils informatique, perfectionniste</li>
 		</ul>
+  
 	<p>Suite à des problème psychologiques sûrement dû à ma longue fréquentation du danger et des armes, j'ai été licencié pour inaptitude.
 	<br>
 	Dans l'impossibilité de retrouver un emploi dans cette branche et sans formation autre qu'un <strong>bac technologique obtenu en 1982</strong>,
 	<br>
 	<mark>je ne suis pas en mesure d'accéder au marché de l'emploi sans acquérir de nouvelles compétences.</mark></p> 
+</div>
 
-	<h2 id="recherche">RECHERCHE</h2>
+<div id="recherche">
+	<h2>RECHERCHE</h2>
 	<p>J'ai un <strong>objectif professionnel</strong>: <mark>m'orienter vers un PROJET DURABLE</mark>. A cet effet je doit trouver:</p>
 	<ul>
 		<li>un métier motivant</li>
@@ -108,7 +163,10 @@
 		<li>poursuivre cette activité pendant ma retraite si possible à distance et en free lance</li>
 	</ol>
 	<p> Etant donné mon âge et la durée du processus, je ne peux <mark>pas perdre de temps et commencer la formation au plus vite</mark></p>
-	<h2 id="pourquoi-codage">POURQUOI LE CODAGE WEB?</h2>
+</div>
+<p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
+<div id="pourquoi-codage">
+	<h2>POURQUOI LE CODAGE WEB?</h2>
 	<h3>Interêt pour la programmation informatique</h3>
 	<p>Mon attrait pour le domaine scientifique et l'informatique ont toujours été marqués:</p>
 	<ol>
@@ -136,6 +194,9 @@
     <li>il fait appel à des langages accessibles et recherchés par les entreprises</li>
     <li>j'ai commencé une autoformation il y a quelques jours sur W<sup>3</sup>scholl puis Khan Academy et mon attrait est confirmé.</li>
   </ul>
+</div>
+<p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
+<div id="avant-tout">
   <p class="important">Avant tout, je prend un plaisir concret à m'installer devant mon écran</p>
   <ul>
     <li class="important-2">à taper des lignes de code,</li>
@@ -146,13 +207,14 @@
     <li class="important-2">de faire les recherches nécessaires</li>
     <li class="important">afin de résoudre les problèmes.</li>
   </ul>
+</div>
     <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
-  <h2 id="mieux-connaitre">pour un peu mieux me connaitre</h2>
-  <p class="titre">visionnez la petite vidéo de présentation,</p>
-    <a target="_blank" href="A.Bauvent présentation.mp4">vidéo présentation A.Bauvent</a>
-  <p class="titre">et la page consacrée à l'origine de ce projet de reconversion</p>
-  <a target="_blank" href="la maturation du projet.html">changer de vie professionnelle</a>
-</body>
+<div id="mieux-connaitre">
+  <h2>pour un peu mieux me connaitre</h2>
+  <p class="titre">visionnez <a target="_blank" href="A.Bauvent présentation.mp4">ma vidéo de présentation</a></p>
+  <p class="titre">et la page consacrée à <a target="_blank" href="la maturation du projet.html">l'origine de ce projet de reconversion</a></p>
+</div>
 
+</body>
 
 </html>
