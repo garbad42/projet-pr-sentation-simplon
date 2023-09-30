@@ -8,19 +8,21 @@
 <style>
   body{
     background-color: rgb(153,204,51);
-    width: 600px;
   }
   
   #en-tête{
     text-align: center;
-    width:500px;
+    width:600px;
     margin:auto;
     border-width: thick;
     border-style: double;
     border-color: crimson;
     background-color: aliceblue;
   }
-
+#sommaire{
+  position:absolute;
+  left:100px;
+}
 
   h2 {
     color: rgb(231, 20, 80);
@@ -40,7 +42,7 @@
     font-weight: bold;
   }
 
-  p {
+  p,li,dt {
     font-family: (monospace, sans-serif);
     font-size: 16px;
     line-height:1.3em;
@@ -50,7 +52,11 @@
     font-size: 1.1em;
     font-family: cursive;
   }
-
+.surligné{
+  background-color: brown;
+  color: white;
+  font-size: 1.1em;
+}
   .important{
     font-size:1.3em;
     color:purple;
@@ -66,28 +72,28 @@
   }
   #presentation{
     position: absolute;
-    left: 20px;
+    left: 100px;
     top:300px;
     width: 600px;
-    height: auto;
+    height: 550px;
     padding: 0px 10px 0px 10px;
-    background-color:rgb(153,153,51)
+    background-color:rgb(202, 202, 114)
  }
 
  #recherche{
     position: absolute;
-    left: 700px;
-    top:380px;
+    left: 800px;
+    top:300px;
     width: 600px;
-    height: auto;
+    height: 550px;
     padding: 0px 10px 0px 10px;
     background-color:rgb(204,255,102)
 
  }
  #pourquoi-codage{
     position: absolute;
-    left: 180px;
-    top:900px;
+    left: 500px;
+    top:850px;
     width: 600px;
     height: auto;
     padding: 0px 10px 0px 10px;
@@ -95,38 +101,53 @@
  }
  #interêt-programmation{
   position: absolute;
-    left: 10px;
-    top:1000px;
+    left: 100px;
+    top:950px;
     width: 600px;
-    height: auto;
+    height: 250px;
     padding: 0px 10px 0px 10px;
     background-color:rgb(204,255,153)
  }
  #capacités-personnelles{
   position: absolute;
-    left: 700px;
-    top:1020px;
+    left: 800px;
+    top:950px;
     width: 600px;
+    height: 250px;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(204,255,153)
+ }
+ #domaine-connu{
+  position: absolute;
+    left: 100px;
+    top:1250px;
+    width: 1295px;
     height: auto;
     padding: 0px 10px 0px 10px;
     background-color:rgb(204,255,153)
  }
+ #domaine{
+  text-align:center
+ }
+ .interligne-tableau{
+  line-height:1.3em;
+ }
  #avant-tout{
   position: absolute;
-  left:60px;
-  top:1300px;
+  left:100px;
+  top:1570px;
   width: 600px;
   height: auto;
   padding: 5px 15px 5px 15px;
-  background-color: rgb(102,153,0);
+  background-color:rgb(204,255,153)
  }
- #mieux-connaitre{
+ #en-complément{
   position: absolute;
-  left:60px;
-  top:1500px;
+  left:800px;
+  top:1570px;
   width: 600px;
   height: auto;
-  padding: 5px 15px 5px 15px;
+  padding-left: 15px;
   background-color: rgb(102,153,0);
  }
  a:hover{
@@ -139,50 +160,43 @@
 <body>
   
   <h1 id="en-tête">POURQUOI VOULOIR DEVENIR DEVELOPEUR WEB?</h1>
-  <h4 id="sommaire">Sommaire:</h4>
+  <div id="sommaire">
+  <h4>Sommaire:</h4>
   <ol>
     <li><a href="#presentation">présentation</a></li>
     <li><a href="#recherche">recherche</a></li>
     <li><a href="#pourquoi-codage">pourquoi le codage web</a></li>
-    <li><a href="#mieux-connaitre">pour un peu mieux me connaitre</a></li>
+    <li><a href="#avant-tout">pour un peu mieux me connaitre</a></li>
   </ol>
+</div>
 
   <div id="presentation">
   <h2>PRESENTATION</h2>
 
   <p>Alain Bauvent, j'ai 59 ans, je vis en couple à Saint Etienne. Mon parcours professionnel est divisé en 2 étapes principales:</p>
-  
-	
   <dl>
 		<dt class="titre">- la première au sein des armées</dt>
 			<dd>après une première partie de carrière en unité de combat</dd>
 			<dd>concours et formation d'officier</dd>
 			<dd>recrutement et sélection des candidats à l'engagement</dd>
-   
-    
 		<dt class="titre">- la deuxième dans le traitement de valeurs</dt>
 			<dd>évolution vers un poste de technicien de maintenance</dd>
 	</dl>
- 
-	<p>Ces 2 milieux professionnels m'ont apporté quelques traits et compétences tels que</p>
+	<p class="titre">Ces 2 milieux professionnels m'ont apporté quelques traits et compétences tels que</p>
 	<ul>
 		<li>rigueur,persévérance,goût de l'effort </li>
 		<li>sens du travail en équipe, recherche de la réussite collective</li>
 		<li>esprit d'initiative, sens de l'adaptation, de l'innovation</li>
 		<li>goût pour l'emploi des outils informatique, perfectionniste</li>
-		</ul>
-  
+	</ul>
 	<p>Suite à des problème psychologiques sûrement dû à ma longue fréquentation du danger et des armes, j'ai été licencié pour inaptitude.
-	<br>
 	Dans l'impossibilité de retrouver un emploi dans cette branche et sans formation autre qu'un <strong>bac technologique obtenu en 1982</strong>,
-	<br>
-	<mark>je ne suis pas en mesure d'accéder au marché de l'emploi sans acquérir de nouvelles compétences.</mark></p> 
-  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
+	<span class="surligné">je ne suis pas en mesure d'accéder au marché de l'emploi sans acquérir de nouvelles compétences.</span></p> 
 </div>
 
 <div id="recherche">
 	<h2>RECHERCHE</h2>
-	<p>J'ai un <strong>objectif professionnel</strong>: <mark>m'orienter vers un PROJET DURABLE</mark>. A cet effet je doit trouver:</p>
+	<p>J'ai un <strong>objectif professionnel</strong>: <span class="surligné">m'orienter vers un PROJET DURABLE</span>. A cet effet je doit trouver:</p>
 	<ul>
 		<li>un métier motivant</li>
 		<li>qui puisse se faire à distance dans la mesure du possible</li>
@@ -194,10 +208,12 @@
 		<li><ins>acquérir de l'expérience</ins> pendant quelques années au sein d'une ou plusieurs entreprises</li>
 		<li>poursuivre cette activité pendant ma retraite si possible à distance et en free lance</li>
 	</ol>
-	<p> Etant donné mon âge et la durée du processus, je ne peux <mark>pas perdre de temps et commencer la formation au plus vite</mark></p>
+	<p> Etant donné mon âge et la durée du processus, je ne peux pas perdre de temps et
+    <br>
+    <span class="surligné"> je dois commencer la formation au plus vite</span></p>
+  <br><br><br><br><br>
   <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
-
 
 	<h2 id="pourquoi-codage">POURQUOI LE CODAGE WEB?</h2>
   <div id="interêt-programmation">
@@ -206,15 +222,14 @@
 	<ol>
 		<li>Je m'interesse à l'informatique depuis le début des années 80 bien avant les premiers PC</li>
 		<li>J'ai réalisé mes <ins>premières programmations</ins> un petit jeu vidéo, à cette même époque <ins>en basic</ins></li>
-		<li>Quand les PC sont arrivés sur les bureaux vers 1995, je me suis immédiatement emparé de l'outil
-		<br>et auto formé sur windows, excel, acces, word et power point</li>
+		<li>Quand les PC sont arrivés sur les bureaux vers 1995, je me suis immédiatement emparé de l'outil et auto formé sur windows, excel, acces, word et power point</li>
 		</ol>
 </div>
 <div id="capacités-personnelles">
 	<h3>Capacités personnelles adaptées au métier</h3>
-	<ul>
+	<ul class="interligne-tableau">
 		<li>Curieux et passionné par les sciences</li>
-		<li>bonnes capacités d'apprentissage même à mon âge</li>
+		<li>bonnes capacités d'apprentissages</li>
 		<li>la logique est mon domaine cognitif de prédilection</li>
 		<li>Rigoureux, persévérant, j'ai besoin de réussir</li>
 		<li>longue expérience du travail en équipe, attaché à la réussite du collectif</li>
@@ -222,12 +237,12 @@
 	</ul>
 </div>
 <div id="domaine-connu">
-	<h3>Un domaine connu, recherché et abordable pour un novice</h3>
+	<h3 id="domaine">Un domaine connu, recherché et abordable pour un novice</h3>
 	<p>Des amis et de la famille, travaillant dans le codage pour diverses finalités notamment la réalité virtuelle ou augmentée, 
 		m'ont conseillés d'entrer dans ce milieu professionnel car il leur semble <strong>parfaitement adapté à mes capacités</strong></p>
   <p>Des recherches m'ont permis d'approfondir ma connaissance des différents langages et métiers, 
 		celui de développeur WEB est celui qui me séduit le plus.</p>
-  <ul>
+  <ul class="interligne-tableau">
     <li>sa finalité m'est compréhensible</li>
     <li>il fait appel à des langages accessibles et recherchés par les entreprises</li>
     <li>j'ai commencé une autoformation il y a quelques jours sur W<sup>3</sup>scholl puis Khan Academy et mon attrait est confirmé.</li>
@@ -235,21 +250,17 @@
   <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
 <div id="avant-tout">
-  <p class="important">Avant tout, je prend un plaisir concret à m'installer devant mon écran</p>
+  <p class="important">Avant tout, je prend plaisir à m'installer devant mon écran</p>
   <ul>
-    <li class="important-2">à taper des lignes de code,</li>
-    <li class="important">d'en voir le résultat s'afficher</li>
-    <li class="important-2">et mon projet évoluer,</li>
-    <br>
-    <li class="important">à identifier les causes des dysfonctionnements,</li>
-    <li class="important-2">de faire les recherches nécessaires</li>
-    <li class="important">afin de résoudre les problèmes.</li>
+    <li class="important-2">imaginer, préparer, concevoir un projet</li>
+    <li class="important">organiser et rédiger la trame codée</li>
+    <li class="important-2">voir le projet évoluer, se concrétiser, aboutir</li>
   </ul>
   <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
 
-<div id="mieux-connaitre">
-  <h2>pour un peu mieux me connaitre</h2>
+<div id="en-complément">
+  <h4>en complément:</h4>
   <p class="titre">visionnez <a target="_blank" href="A.Bauvent présentation.mp4">ma vidéo de présentation</a></p>
   <p class="titre">et la page consacrée à <a target="_blank" href="la maturation du projet.html">l'origine de ce projet de reconversion</a></p>
   <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
