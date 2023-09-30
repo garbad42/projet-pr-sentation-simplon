@@ -7,7 +7,7 @@
 </head>
 <style>
   body{
-    background-color: antiquewhite;
+    background-color: rgb(153,204,51);
     width: 600px;
   }
   
@@ -43,6 +43,7 @@
   p {
     font-family: (monospace, sans-serif);
     font-size: 16px;
+    line-height:1.3em;
   }
 
   .titre {
@@ -64,45 +65,75 @@
     font-size:0.7em;
   }
   #presentation{
-    position: relative;
+    position: absolute;
     left: 20px;
+    top:300px;
     width: 600px;
     height: auto;
     padding: 0px 10px 0px 10px;
-    background-color:rgb(224, 211, 187)
+    background-color:rgb(153,153,51)
  }
+
  #recherche{
-    position: relative;
-    left: 100px;
+    position: absolute;
+    left: 700px;
+    top:380px;
     width: 600px;
     height: auto;
     padding: 0px 10px 0px 10px;
-    background-color:rgb(218, 250, 245)
+    background-color:rgb(204,255,102)
+
  }
  #pourquoi-codage{
-    position: relative;
+    position: absolute;
     left: 180px;
+    top:900px;
     width: 600px;
     height: auto;
     padding: 0px 10px 0px 10px;
-    background-color:rgb(176, 226, 96)
+    background-color:rgb(204,255,153)
+ }
+ #interêt-programmation{
+  position: absolute;
+    left: 10px;
+    top:1000px;
+    width: 600px;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(204,255,153)
+ }
+ #capacités-personnelles{
+  position: absolute;
+    left: 700px;
+    top:1020px;
+    width: 600px;
+    height: auto;
+    padding: 0px 10px 0px 10px;
+    background-color:rgb(204,255,153)
  }
  #avant-tout{
-  position: relative;
+  position: absolute;
   left:60px;
+  top:1300px;
   width: 600px;
   height: auto;
   padding: 5px 15px 5px 15px;
-  background-color: cadetblue;
+  background-color: rgb(102,153,0);
  }
  #mieux-connaitre{
-  position: relative;
+  position: absolute;
   left:60px;
+  top:1500px;
   width: 600px;
   height: auto;
   padding: 5px 15px 5px 15px;
-  background-color: rgb(221, 195, 214);
+  background-color: rgb(102,153,0);
  }
+ a:hover{
+  background-color: brown;
+  color:white;
+ }
+
 </style>
 
 <body>
@@ -146,6 +177,7 @@
 	Dans l'impossibilité de retrouver un emploi dans cette branche et sans formation autre qu'un <strong>bac technologique obtenu en 1982</strong>,
 	<br>
 	<mark>je ne suis pas en mesure d'accéder au marché de l'emploi sans acquérir de nouvelles compétences.</mark></p> 
+  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
 
 <div id="recherche">
@@ -163,10 +195,12 @@
 		<li>poursuivre cette activité pendant ma retraite si possible à distance et en free lance</li>
 	</ol>
 	<p> Etant donné mon âge et la durée du processus, je ne peux <mark>pas perdre de temps et commencer la formation au plus vite</mark></p>
+  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
-<p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
-<div id="pourquoi-codage">
-	<h2>POURQUOI LE CODAGE WEB?</h2>
+
+
+	<h2 id="pourquoi-codage">POURQUOI LE CODAGE WEB?</h2>
+  <div id="interêt-programmation">
 	<h3>Interêt pour la programmation informatique</h3>
 	<p>Mon attrait pour le domaine scientifique et l'informatique ont toujours été marqués:</p>
 	<ol>
@@ -175,6 +209,8 @@
 		<li>Quand les PC sont arrivés sur les bureaux vers 1995, je me suis immédiatement emparé de l'outil
 		<br>et auto formé sur windows, excel, acces, word et power point</li>
 		</ol>
+</div>
+<div id="capacités-personnelles">
 	<h3>Capacités personnelles adaptées au métier</h3>
 	<ul>
 		<li>Curieux et passionné par les sciences</li>
@@ -184,6 +220,8 @@
 		<li>longue expérience du travail en équipe, attaché à la réussite du collectif</li>
 		<li>je suis tout autant capable de travailler isolé sans contrainte de temps, de jour et d'heure</li>
 	</ul>
+</div>
+<div id="domaine-connu">
 	<h3>Un domaine connu, recherché et abordable pour un novice</h3>
 	<p>Des amis et de la famille, travaillant dans le codage pour diverses finalités notamment la réalité virtuelle ou augmentée, 
 		m'ont conseillés d'entrer dans ce milieu professionnel car il leur semble <strong>parfaitement adapté à mes capacités</strong></p>
@@ -194,8 +232,8 @@
     <li>il fait appel à des langages accessibles et recherchés par les entreprises</li>
     <li>j'ai commencé une autoformation il y a quelques jours sur W<sup>3</sup>scholl puis Khan Academy et mon attrait est confirmé.</li>
   </ul>
+  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
-<p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 <div id="avant-tout">
   <p class="important">Avant tout, je prend un plaisir concret à m'installer devant mon écran</p>
   <ul>
@@ -207,12 +245,14 @@
     <li class="important-2">de faire les recherches nécessaires</li>
     <li class="important">afin de résoudre les problèmes.</li>
   </ul>
+  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
-    <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
+
 <div id="mieux-connaitre">
   <h2>pour un peu mieux me connaitre</h2>
   <p class="titre">visionnez <a target="_blank" href="A.Bauvent présentation.mp4">ma vidéo de présentation</a></p>
   <p class="titre">et la page consacrée à <a target="_blank" href="la maturation du projet.html">l'origine de ce projet de reconversion</a></p>
+  <p class="lien-retour"><a href="#sommaire">retour début présentation</a></p>
 </div>
 
 </body>
