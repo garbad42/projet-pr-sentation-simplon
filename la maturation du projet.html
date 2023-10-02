@@ -12,6 +12,9 @@
             text-align:center;
             background-color:rgb(166,143,21);
             color:rgb(255,251,228);
+            width:400px;
+            position:absolute;
+            left:33%;
         }
         
         h2{
@@ -31,6 +34,15 @@
         p{
             font-family:monospace;
             font-size:14px;
+            line-height: 1.2em;
+        }
+        .surligné{
+            background-color:rgb(166,143,21);
+            color:rgb(255,251,228);
+            font-size:1.2em;
+        }
+        .titre{
+            text-align: center;
         }
         .solutions{
             font-size:1.1em;
@@ -48,72 +60,93 @@
             font-size:1.1em;
             font-family:cursive;
         }
-	#lien-retour{
-	    font-size:0.6em;
-	}
+	    #lien-retour{
+	        font-size:0.6em;
+	    }
+        a:hover{
+            background-color:rgb(166,143,21);
+            color:rgb(255,251,228);
+        }
+
     
     </style>
     
     <body>
         
         <h1>CHANGER DE VIE PROFESSIONNELLE</h1>
-	<a href="présentation A.Bauvent.html">retour à motivation pour le métier de développeur</a>
-
-        <h3 id="sommaire">Sommaire</h3>
-        <ol>
-            <li><a href="#constat"> un constat: mal être dans mon métier</a></li>
-            <li><a href="#nouvelle-voie">un besoin: trouver une nouvelle voie</a></li>
-            <li><a href="#en-oeuvre">mise en oeuvre</a></li>
+	    
+        <div id="sommaire">
+            <h3>Sommaire</h3>
+            <ol>
+                <li><a href="#constat"> un constat: mal être dans mon métier</a></li>
+                <li><a href="#nouvelle-voie">un besoin: trouver une nouvelle voie</a></li>
+                <li><a href="#en-oeuvre">mise en oeuvre</a></li>
             
-        </ol>
+            </ol>
+        </div>
+
+        <h2 class="constat titre"> 1- un constat: mal être dans mon métier</h2>
+
+        <div id="déprimer">
+            <h3>je suis en train de déprimer</h3>
+            <ul>
+                <li>pas le goût au travail</li>
+                <li>pas le temps de préparer une reconversion</li>
+                <li>pas d'idée</li>
+            </ul>
+        </div>
+
+        <div id="en-finir">
+            <h3>en finir avec la spirale perdante</h3>
+            <p><strong>Pour mettre fin à cette situation</strong> sans issue dans des conditions viables</p><p class="solutions">j'envisage 3 solutions</p>
+            <ul>
+                <li>rupture conventionnelle</li>
+                <li>inaptitude médicale</li>
+                <li>pour un nouvel emploi immédiat</li>
+            </ul>
+            <p>Ce sera un mixe mais dans tous les cas <strong>vers un nouvel emploi</strong>,</p><p class="solutions">l'inactivité n'est pas <em>(encore)</em> à mon ordre du jour.</p>
+        </div>
         
-        <h2 id="constat"> 1- un constat: mal être dans mon métier</h2>
-        <h3>je suis en train de déprimer</h3>
-        <ul>
-            <li>pas le goût au travail</li>
-            <li>pas le temps de préparer une reconversion</li>
-            <li>pas d'idée</li>
-        </ul>
-        <h3>en finir avec la spirale perdante</h3>
-        <p><strong>Pour mettre fin à cette situation</strong> sans issue dans des conditions viables</p><p class="solutions">j'envisage 3 solutions</p>
-        <ul>
-            <li>rupture conventionnelle</li>
-            <li>inaptitude médicale</li>
-            <li>pour un nouvel emploi immédiat</li>
-        </ul>
-        <p>Ce sera un mixe mais dans tous les cas <strong>vers un nouvel emploi</strong>,</p><p class="solutions">l'inactivité n'est pas <em>(encore)</em> à mon ordre du jour.</p>
+        <h2 class="un-besoin titre">2- un besoin: trouver une nouvelle voie professionnelle</h2>
         
-        <h2 id="nouvelle-voie"> 2- un besoin: trouver une nouvelle voie professionnelle</h2>
-        <h3>à partir des acquis</h3>
-        <dl>
-            <dt>- en privilégiant la <strong>localisation</strong></dt>
-            <dd>employé polyvalent à carrefour</dd><br>
-            <dt>- en privilégiant les <strong>compétences</strong></dt>
-            <dd>agent de sécurité</dd>
-        </dl>
-        <p>Ce sont des pistes que j'explore au cours de l'année 2023, celle qui suit ma perte d'emploi. Aucune ne m'apporte de satisfaction ni la</p><p id="motivation">motivation pour une solution à long terme.</p>
-        
-        <h3>vers un nouveau projet</h3>
-        <h4>des contraintes</h4>
-        <p>Deux étapes pour être qualifié de durable:</p>
-        <ul>
-            <li>une formation</li>
-            <li>de l'expérience</li>
-        </ul>
-        <p>Toutes deux demandent du temps et se heurtent à un <strong>obstacle</strong> majeur: <ins>mon age.</ins> Je n'aurai qu'une chance.</p>
-        <h4>des impératifs</h4>
-        <p>pour contourner l'obstacle identifié ci-dessus, il me faut un projet:</p>
-        <ul>
-            <li>motivant</li>
-            <li>adapté à mes capacité physiques futures</li>
-            <li>ne plus perdre du temps à réfléchir et agir</li>
-        </ul>
-        
-        <h2 id="en-oeuvre"> 3- mise en oeuvre</h2>
-        <p>sur des conseils de professionnels, je m'oriente vers le développement web car il apporte de véritables</p>
-        <p id="motivations">débouchés professionnels.</p>
-        <p>tout en satisfaisant mes attentes.</p>
-        
+        <div id="a-partir-acquis">
+            <h3>à partir des acquis</h3>
+            <dl>
+                <dt>- en privilégiant la <strong>localisation</strong></dt>
+                    <dd>employé polyvalent à carrefour</dd><br>
+                <dt>- en privilégiant les <strong>compétences</strong></dt>
+                    <dd>agent de sécurité</dd>
+            </dl>
+            <p>Ce sont des pistes que j'explore au cours de l'année 2023, celle qui suit ma perte d'emploi. Aucune ne m'apporte de satisfaction ni la</p><p id="motivation">motivation pour une solution à long terme.</p>
+        </div>
+
+        <h3 id="nouveau-projet">vers un nouveau projet</h3>
+
+        <div id="contraintes">
+            <h4>des contraintes</h4>
+            <p>Deux étapes pour être qualifié de durable:</p>
+            <ul>
+                <li>une formation</li>
+                <li>de l'expérience</li>
+            </ul>
+            <p>Toutes deux demandent du temps et se heurtent à un <strong>obstacle</strong> majeur: <ins>mon age.</ins> Je n'aurai qu'une chance.</p>
+        </div>
+
+        <div id="impératifs">
+            <h4>des impératifs</h4>
+            <p>pour contourner l'obstacle identifié ci-dessus, il me faut un projet:</p>
+            <ul>
+                <li>motivant</li>
+                <li>adapté à mes capacité physiques futures</li>
+                <li>ne plus perdre du temps à réfléchir et agir</li>
+            </ul>
+        </div>
+
+        <div class="mise-en-oeuvre titre">
+            <h2 id="titre-mise-en-oeuvre"> 3- mise en oeuvre</h2>
+            <p>sur des conseils de professionnels, je m'oriente vers le développement web car il apporte de véritables
+            <span class="surligné">débouchés professionnels</span> tout en satisfaisant mes attentes.</p>
+        </div>
         <h3>motivations</h3>
         <dl>
         <dt>la <strong>programmation m'interesse</strong> depuis les années 80</dt>
