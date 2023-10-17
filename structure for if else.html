@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>structure en java</title>
+    <script>
+        function compteur(){
+        let a,b;
+        a="";
+        for (b=1;b<100;b++){
+        a=b +" "+a;
+        }
+        document.getElementById("demo_for").innerHTML = a;
+    }
+        function if_else(){
+            let c,d,e;
+            c=5;
+            d=6;
+            if (c>d){
+                e=c+d;
+            }
+            else{
+                if (c==d){
+                    e=0;
+                }
+                else{
+                    e=c*d;
+                }
+            }
+            document.getElementById("demo_ifelse").innerHTML = e;
+        }
+        function ternaire(){
+            let c,d,e;
+            c=7;
+            d=7;
+          (c>=d) ? (e=c+d) : (e=c*d);
+                
+            document.getElementById("demo_ternaire").innerHTML = e;
+        }
+        function while_break(){
+            let f,g;
+            f="";
+            g=6;
+            while (g>5 && g<100){
+                if(g==60){
+                    break
+                }
+                f=g+" "+f;
+                g++;
+            }
+            document.getElementById("demo_while").innerHTML = f;
+        }        
+        function while_continue(){
+            let f,g;
+            f="";
+            g=5;
+            while (g>=5 && g<100){
+                g++;
+                if(g>=60 && g<70){
+                    continue
+                }
+                f=g+" "+f;
+                
+            }
+            document.getElementById("demo_continue").innerHTML = f;
+        } 
+    
+        function switch_case(){
+            let h,i;
+            h=4;
+            switch (h){
+            case 1: i="un"; break;
+            case 2: i="deux"; break;
+            case 3: i=" trois"; break;
+            default: i="aucun des trois";
+            }
+            document.getElementById("demo_switchCase").innerHTML = i;
+        }
+        function do_while (){
+            let j,k,l;
+            l="aucune valeur saisie";
+            j=1;
+            do{
+                document.getElementById("demo_do_while").innerHTML = l;
+                j++;
+            }
+            while (j>5);
+            
+        }
+        
+    </script>
+</head>
+<body>
+    <h2>JavaScript Structure for</h2>
+    <p id="demo_for"></p>
+    <button type="button" onclick="compteur()">Try it</button>
+
+    <h2>javaScript structure if/else</h2>
+    <p id="demo_ifelse"></p>
+    <button type="button" onclick="if_else()">Try it</button>
+
+    <h2>javaScript structure if/else simplifiée (ternaire)</h2>
+    <p id="demo_ternaire"></p>
+    <button type="button" onclick="ternaire()">Try it</button>
+
+    <h2>javaScript structure while / break</h2>
+    <p id="demo_while"></p>
+    <button type="button" onclick="while_break()">Try it</button>
+
+    <h2>javaScript structure while / continue</h2>
+    <p id="demo_continue"></p>
+    <button type="button" onclick="while_continue()">Try it</button>
+    
+    <h2>javaScript structure do/while</h2>
+    <p id="demo_do_while"></p>
+    <p id="demo_doWhile"></p>
+    <button type="button" onclick="do_while()">Try it</button>
+    
+    <h2>javaScript structure switch case</h2>
+    <p id="demo_switchCase"></p>
+    <button type="button" onclick="switch_case()">Try it</button>
+</body>
+</html>
