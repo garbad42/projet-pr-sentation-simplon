@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <style>
+       
+      </style>
+      <script language="javascript">
+         function p(){
+            let a=document.fo1.prénom.value;
+            document.getElementById("prénom").innerHTML = a;
+            document.getElementById("texte_prénom").innerHTML = a;
+         }
+         function n(){
+            let b=document.fo2.nom.value;
+            document.getElementById("nom").innerHTML = b;
+            document.getElementById("texte_nom").innerHTML = b;
+         }
+         function d(){
+            let c,d,e;
+            c="né(e) le";
+            d=document.fo3.date_naissance.value;
+            e=c+" "+d;
+            document.getElementById("dateNaissance").innerHTML = d;
+            document.getElementById("texte_date_naissance").innerHTML = e;
+         }
+      </script>
+   </head>
+   <body>
+    
+    <p id="rens_prénom">Renseignez votre prénom</p>
+    <form id="case_prénom" name="fo1">
+        <input type="text" name="prénom" />
+        <input type="button" value="valider" onClick="p()" />
+    </form>
+
+    <p id="rens_nom">Renseignez votre nom</p>
+    <form id="case_nom" name="fo2">
+        <input type="text" name="nom" />
+        <input type="button" value="valider" onClick="n()" />
+    </form>
+
+    <p id="rens_date_naissance">Renseignez votre date de naissance</p>
+    <form id="case_date_naissance" name="fo3">
+        <input type="date" name="date_naissance" />
+        <input type="button" value="valider" onClick="d()" />
+    </form>
+    <h5>contrôle renseignements</h5>
+    <p>Prénom: <span id="prénom"></span></p>
+    <p>Nom: <span id="nom"></span></p>
+    <p>date de naissance: <span id="dateNaissance"></span></p>
+    
+    <h5>texte formulaire</h5>
+    <p>
+        <span id="texte_prénom"></span> 
+        <span> </span>
+        <span id="texte_nom"></span> 
+        <span> </span>
+        <span id="texte_date_naissance"></span>
+    </p>
+   </body>
+</html>
