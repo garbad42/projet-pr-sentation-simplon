@@ -24,9 +24,12 @@
             document.getElementById("dateNaissance").innerHTML = d;
             document.getElementById("texte_date_naissance").innerHTML = e;
          }
+         function init(){
+            document.fo1.prénom.focus();
+         }
       </script>
    </head>
-   <body>
+   <body onLoad="init()">
     
     <p id="rens_prénom">Renseignez votre prénom</p>
     <form id="case_prénom" name="fo1">

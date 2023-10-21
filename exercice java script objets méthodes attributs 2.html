@@ -2,9 +2,7 @@
 <html>
    <head>
       <meta charset="UTF-8" />
-      <style>
-       
-      </style>
+
       <script language="javascript">
         var a,b,c,d,e;
          function p(){
@@ -25,14 +23,18 @@
             document.getElementById("dateNaissance").innerHTML = d;
             
          }
+         
          function f(){
             document.getElementById("texte_prénom").innerHTML = a;
             document.getElementById("texte_nom").innerHTML = b;
             document.getElementById("texte_date_naissance").innerHTML = e;
          }
+         function init(){
+            document.fo1.prénom.focus();
+         }
       </script>
    </head>
-   <body>
+   <body onLoad="init()">
     
     <p id="rens_prénom">Renseignez votre prénom</p>
     <form id="case_prénom" name="fo1">

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+
+      <script language="javascript">
+         function p(){
+            a=document.permutation.texte_1.value;
+            document.permutation.texte_1.value=document.permutation.texte_2.value;
+            document.permutation.texte_2.value=a;
+         }
+         function init(){
+            document.permutation.texte_1.focus();
+         }
+
+      </script>
+    </head>
+    <body onLoad="init()">
+        <form name="permutation">
+            <input type="text" name="texte_1" /><br/><br/>
+            <input type="text" name="texte_2" /><br/><br/>
+            <input type="button" value="permuter" onClick="p()"/>
+        </form>
+    </body>
+</html>
+    
