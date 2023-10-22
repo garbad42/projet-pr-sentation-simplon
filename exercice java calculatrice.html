@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+
+      <script language="javascript">
+
+         function adition(){
+            nbr1=document.calculatrice.valeur_1.value;
+            nbr2=document.calculatrice.valeur_2.value;
+            document.calculatrice.total.value = parseInt(nbr1)+parseInt(nbr2);
+         }
+         function soustraction(){
+            nbr1=document.calculatrice.valeur_1.value;
+            nbr2=document.calculatrice.valeur_2.value;
+            if (nbr1>=nbr2) {
+               document.calculatrice.total.value = nbr1-nbr2;
+            } else {
+               document.calculatrice.total.value = "erreur";
+            }
+         }
+         function multiplication(){
+            nbr1=document.calculatrice.valeur_1.value;
+            nbr2=document.calculatrice.valeur_2.value;
+            document.calculatrice.total.value = nbr1*nbr2;
+         }         
+         function division(){
+            nbr1=document.calculatrice.valeur_1.value;
+            nbr2=document.calculatrice.valeur_2.value;
+            if (nbr2!=0) {
+               document.calculatrice.total.value = nbr1/nbr2;
+            } else {
+               document.calculatrice.total.value = "erreur";
+            }
+            }
+         
+         function init(){
+            document.calculatrice.valeur_1.focus();
+         }
+
+      </script>
+    </head>
+    <body onLoad="init()">
+        <form name="calculatrice">
+            <input type="text" name="valeur_1" /><br/><br/>
+            <input type="text" name="valeur_2" /><br/><br/>
+            <input type="button" value="+" onClick="adition()"/>
+            <input type="button" value="-" onClick="soustraction()"/>
+            <input type="button" value="*" onClick="multiplication()"/>
+            <input type="button" value="/" onClick="division()"/><br/><br/>
+            <input type="text" name="total" />
+        </form>
+    </body>
+</html>

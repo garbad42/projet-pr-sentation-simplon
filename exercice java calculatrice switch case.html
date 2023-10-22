@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+
+      <script language="javascript">
+
+         function opération (op){
+            nbr1=document.calculatrice.valeur_1.value;
+            nbr2=document.calculatrice.valeur_2.value;
+            switch (op){
+               case "ad": résultat=parseFloat(nbr1)+parseFloat(nbr2); break;
+               case "sous": résultat = nbr1-nbr2; break;
+               case "div": 
+                  if(nbr2!=0){
+                     résultat=nbr1/nbr2
+                           }
+                           else{
+                              résultat="erreur";
+                           }
+                           break;
+               case "mult": résultat = nbr1*nbr2;
+            }
+            document.calculatrice.total.value=résultat;
+         }
+         function remiseZero(){
+            document.calculatrice.valeur_1.value="0";
+            document.calculatrice.valeur_2.value="0";
+            document.calculatrice.total.value="0";
+            document.calculatrice.valeur_1.focus();
+         }
+
+         function init(){
+            document.calculatrice.valeur_1.value="0";
+            document.calculatrice.valeur_2.value="0";
+            document.calculatrice.total.value="0";
+            document.calculatrice.valeur_1.focus();
+         }
+
+      </script>
+    </head>
+    <body onLoad="init()">
+        <form name="calculatrice">
+            <input type="text" name="valeur_1" /><br/><br/>
+            <input type="text" name="valeur_2" /><br/><br/>
+            <input type="button" value="+" onClick="opération('ad')"/>
+            <input type="button" value="-" onClick="opération('sous')"/>
+            <input type="button" value="*" onClick="opération('mult')"/>
+            <input type="button" value="/" onClick="opération('div')"/><br/><br/>
+            <input type="text" name="total" /><br/><br/>
+            <input type="button" value="reset"onClick="remiseZero()"/>
+        </form>
+    </body>
+</html>
